@@ -15,8 +15,12 @@ class AttackECC():
         w_prime = 10
         while(w < self.ecc.get_k()):
             pairs_aj_bj = self.generate_aj_bj()
+            d_candidates = self.select_candidates(pairs_aj_bj);
 
 
 
     def generate_aj_bj(self):
-        raise NotImplemented()
+        raise NotImplementedError()
+
+    def select_candidates(self, pairs):
+        raise NotImplementedError()

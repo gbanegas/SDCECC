@@ -1,6 +1,5 @@
 from .ECC import ECC
 import random
-from itertools import product
 import math
 
 
@@ -44,10 +43,10 @@ class ECC_ed25519(ECC):
         return r
 
     def get_k(self):
-        return self.k
+        return k
 
     def get_g(self):
-        return self.g
+        return g
 
     def get_t(self):
-        return self.t
+        return t

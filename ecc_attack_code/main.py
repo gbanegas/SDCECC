@@ -7,6 +7,7 @@ def main():
     print("dummy")
     gen_ed25519 = Data_Generator(N,0)
     attack = AttackECC(gen_ed25519.get_ecc(), gen_ed25519)
+    attack.d_solve()
 
 
 if __name__ == "__main__":
