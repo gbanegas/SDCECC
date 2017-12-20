@@ -16,3 +16,6 @@ class Data_Generator():
 
     def generate_v_values(self):
         return self.ecc.generate_v_values()
+
+    def get_ecc(self):
+        return self.ecc

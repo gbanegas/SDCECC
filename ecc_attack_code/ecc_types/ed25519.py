@@ -6,10 +6,12 @@ import math
 
 d = 123983737618
 q = 2**252 + 27742317777372353535851937790883648493
+k = 252
+t = 124
+g = 127
 r = []
 v = []
 alpha = []
-
 
 class ECC_ed25519(ECC):
 
@@ -39,4 +41,13 @@ class ECC_ed25519(ECC):
             if(self.n != 0):
                 a = random.getrandbits(self.n)
             r.append(int(math.fabs(a)))
-        return r;
+        return r
+
+    def get_k(self):
+        return self.k
+
+    def get_g(self):
+        return self.g
+
+    def get_t(self):
+        return self.t
